@@ -74,6 +74,10 @@ h5 {
     margin-left: 2rem;
 }
 
+.mt-8 {
+    margin-top: .5rem;
+}
+
 .mt-64 {
     margin-top: 4rem;
 }
@@ -142,7 +146,12 @@ header {
     background-color: var(--black);
 }
 
-.nav__lista, .newsletter, .historia, .historia__lista, .historia__lista--item, .localizacao {
+.nav__lista,
+.newsletter,
+.historia,
+.historia__lista,
+.historia__lista--item,
+.localizacao {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -219,7 +228,11 @@ header {
 
 /* -----  ----- */
 .section__titulo,
-.item--data-hora, .informacao-2__item, .rodape__itens {
+.item--data-hora,
+.informacao-2__item,
+.rodape__itens,
+.pessoal,
+.piloto__info, .pilotos {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -446,7 +459,7 @@ header {
 .banner__loja {
     width: 50%;
     padding-left: 4rem;
-    border-left: 1px solid var( --red);
+    border-left: 1px solid var(--red);
 }
 
 .campo__nome-sobrenome,
@@ -469,11 +482,11 @@ footer {
     text-align: center;
     margin-top: 8rem;
     padding: 5rem 7rem 2rem 7rem;
-    
+
     background-color: var(--black);
 }
 
-.rodape__itens nav{
+.rodape__itens nav {
     padding: 0 3rem;
 }
 
@@ -560,4 +573,57 @@ footer p {
     display: flex;
     align-items: center;
     gap: 1rem;
+}
+
+/* Página pilotos */
+.piloto__info--conteudo {
+    width: 394px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 2rem 0 3rem 0;
+    background-color: var(--black);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.retangulo {
+    width: 60%;
+    height: 2px;
+    background: var(--gradient);
+    position: relative;
+    left: 40%;
+}
+
+.pessoal {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+    padding: 0 2rem;
+    color: var(--gray);
+}
+
+
+.campeonato {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.campeonato h5 {
+    width: fit-content;
+    padding: .5rem 1rem;
+    background: var(--gradient);
+}
+
+.piloto__info--img {
+    max-width: 280px;
+    max-height: 500px;
+    cursor: pointer;
+}
+
+.display-none {
+    display: none;
 }
