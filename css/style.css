@@ -74,6 +74,14 @@ h5 {
     margin-left: 2rem;
 }
 
+.mt-64 {
+    margin-top: 4rem;
+}
+
+.mt-32 {
+    margin-top: 2rem;
+}
+
 .mb-24 {
     margin-bottom: 1.5rem;
 }
@@ -101,7 +109,7 @@ body {
 
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
 }
 
 a {
@@ -134,7 +142,7 @@ header {
     background-color: var(--black);
 }
 
-.nav__lista, .newsletter {
+.nav__lista, .newsletter, .historia, .historia__lista, .historia__lista--item, .localizacao {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -489,4 +497,67 @@ footer p {
     color: var(--gray);
     font-size: .8rem;
     margin-top: 3rem;
+}
+
+/* Sobre nós */
+.historia {
+    width: 50%;
+    flex-direction: column;
+    gap: 3rem;
+    color: var(--gray);
+    text-align: center;
+}
+
+.historia__lista {
+    flex-direction: column;
+}
+
+.historia__lista--item {
+    align-self: self-start;
+    text-align: start;
+}
+
+.historia__lista--item i {
+    color: var(--red);
+}
+
+.citacao-jg {
+    width: 100%;
+    padding: 3rem 12rem;
+    background-color: var(--black);
+    color: var(--white);
+    font-style: italic;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.localizacao__informacoes {
+    background: var(--gradient);
+    color: var(--white);
+    height: 394px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4.5rem;
+    padding: 2rem 1.8rem 7.5rem 1.8rem;
+}
+
+.localizacao__informacoes h5 {
+    text-align: end;
+    width: 60%;
+    border-bottom: 1px solid var(--white);
+}
+
+.informacoes--conteudo {
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.informacoes--conteudo div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
