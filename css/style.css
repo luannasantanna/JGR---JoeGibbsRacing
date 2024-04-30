@@ -455,3 +455,38 @@ header {
     display: flex;
     white-space: nowrap;
 }
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 8rem;
+    padding: 5rem 7rem 2rem 7rem;
+    
+    background-color: var(--black);
+}
+
+.rodape__itens nav{
+    padding: 0 3rem;
+}
+
+.rodape__rede--sociais {
+    padding-top: .5rem;
+    border-top: 1px solid rgba(251, 251, 251, 0.5);
+    margin-top: .5rem;
+}
+
+.rodape__rede--sociais a {
+    color: var(--white);
+    padding: .5rem;
+    transition: .4s ease;
+
+    &:hover {
+        color: var(--red);
+    }
+}
+
+footer p {
+    color: var(--gray);
+    font-size: .8rem;
+    margin-top: 3rem;
+}
