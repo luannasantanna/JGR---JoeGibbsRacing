@@ -208,3 +208,133 @@ header {
 .parceiros {
     width: 100%;
 }
+
+/* -----  ----- */
+
+.section__titulo,
+.item--data-hora, .informacao-2__item, .rodape__itens {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section__titulo p {
+    font-size: .875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--red);
+}
+
+.section__descricao--link {
+    border: 1px solid var(--red);
+    border-radius: 4px;
+    color: var(--gray);
+    padding: .5rem;
+    margin-left: 1rem;
+
+    &:hover {
+        background: var(--gradient);
+        color: var(--white);
+        font-weight: 500;
+    }
+}
+
+/* Pilotos / Home */
+.cards__pilotos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.card__piloto {
+    max-width: 279px;
+    height: 435px;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: .5rem;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    color: var(--white);
+    text-align: center;
+}
+
+.cBell {
+    background-image: url(https://github.com/luannasantanna/JGR---JoeGibbsRacing/blob/main/imagens/equipe/pilotos/card-home/cbell.png?raw=true);
+}
+
+.dHamlin {
+    background-image: url(https://github.com/luannasantanna/JGR---JoeGibbsRacing/blob/main/imagens/equipe/pilotos/card-home/dHamlin.png?raw=true);
+}
+
+.mtj {
+    background-image: url(https://github.com/luannasantanna/JGR---JoeGibbsRacing/blob/main/imagens/equipe/pilotos/card-home/mtjr.png?raw=true);
+}
+
+.tGibbs {
+    background-image: url(https://github.com/luannasantanna/JGR---JoeGibbsRacing/blob/main/imagens/equipe/pilotos/card-home/tyGibbs.png?raw=true);
+}
+
+.card__piloto--rede-sociais {
+    width: 60%;
+    text-align: center;
+    border-top: 1px solid var(--black);
+}
+
+.card__piloto--rede-sociais a {
+    color: var(--black);
+    padding: .5rem;
+
+    &:hover {
+        color: var(--red);
+    }
+}
+
+.equipe {
+    background: var(--gradient);
+    padding: .5rem;
+    margin-top: 3rem;
+}
+
+.equipe__link {
+    color: var(--white);
+    padding: .5rem;
+    font-weight: 500;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 90%;
+        left: 5%;
+
+        width: 0;
+        height: 1px;
+        background-color: var(--white);
+        transition: 0.5s ease;
+    }
+
+    &:hover {
+        transform: scale(1.01);
+        transition: .3s ease;
+
+        &::after {
+            width: 95%;
+        }
+    }
+}
