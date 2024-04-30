@@ -371,3 +371,49 @@ header {
 .galeria__foto--6 {
     grid-area: foto6;
 }
+
+/* Corrida */
+.corrida__informacoes {
+    max-width: 800px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+        "info1"
+        "info1"
+        "info2";
+}
+
+.corrida__informacao-1 {
+    grid-area: info1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.corrida__informacao-1 p {
+    width: 80%;
+    text-align: center;
+    padding: 3rem 0;
+    border-top: 2px solid var(--red);
+    border-bottom: 2px solid var(--red);
+}
+
+.corrida__informacao-2 {
+    grid-area: info2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.item--data-hora {
+    max-width: 270px;
+}
+
+.informacao-2__item {
+    max-width: 281px;
+    flex-direction: column;
+    gap: 1rem;
+}
