@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+    --black: #040707;
+    --red: #860038;
+    --gray: #b2b7bb;
+    --white: #fbfbfb;
+    --gradient: linear-gradient(270deg, #c20042 0%, #860038 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Tipografias */
+h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 100%;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 100%;
+}
+
+h5 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 120%;
+}
+
+/* Margen e Padding */
+.py-8 {
+    padding: .5rem 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+
+    background-color: var(--white);
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+}
