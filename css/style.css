@@ -57,6 +57,12 @@ h5 {
     line-height: 120%;
 }
 
+.typeB3 {
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 120%;
+}
+
 /* Margen e Padding */
 .p-8 {
     padding: .5rem;
@@ -232,7 +238,7 @@ header {
 .informacao-2__item,
 .rodape__itens,
 .pessoal,
-.piloto__info, .pilotos {
+.piloto__info, .pilotos, .time__nomes {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -605,7 +611,6 @@ footer p {
     color: var(--gray);
 }
 
-
 .campeonato {
     display: flex;
     flex-direction: column;
@@ -626,4 +631,53 @@ footer p {
 
 .display-none {
     display: none;
+}
+
+.time__informacoes {
+    width: 310px;
+    height: 181px;
+    background-color: var(--black);
+    color: white;
+    padding-top: 1rem;
+}
+
+.time__nomes {
+    padding: 1.5rem 1.5rem 0 1.5rem;
+}
+
+.pitcrews--nomes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 6px;
+}
+
+.roadcrews {
+    height: 100%;
+    padding-bottom: 2rem;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.roadcrews__nomes {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4px 12px;
+}
+
+.roadcrews__fotos, .time {
+    display: flex;
+}
+
+.retangulo--black {
+    width: 45px;
+    background-color: var(--black);
+    color: var(--white);
+
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 1rem;
 }
