@@ -238,7 +238,9 @@ header {
 .informacao-2__item,
 .rodape__itens,
 .pessoal,
-.piloto__info, .pilotos, .time__nomes {
+.piloto__info,
+.pilotos,
+.time__nomes {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -264,6 +266,13 @@ header {
         color: var(--white);
         font-weight: 500;
     }
+}
+
+.link-ativo {
+    background: var(--gradient);
+    color: var(--white);
+    font-weight: 500;
+    cursor: default;
 }
 
 /* Pilotos / Home */
@@ -439,10 +448,95 @@ header {
     max-width: 270px;
 }
 
+.item--hora {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
 .informacao-2__item {
     max-width: 281px;
     flex-direction: column;
     gap: 1rem;
+}
+
+.logos__campeonatos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    cursor: pointer;
+}
+
+#nascar,
+#xfinity {
+    transition: .3s ease;
+
+    &:hover {
+        transform: scale(1.02);
+    }
+}
+
+.calendario {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem 3rem;
+    margin-top: 5rem;
+}
+
+.corrida__item {
+    width: 554px;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem;
+    border: 1px solid var(--red);
+}
+
+.corrida__item--info {
+    width: 114px;
+    border-right: 1px solid var(--gray);
+    padding-right: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+.recesso {
+    background-color: var(--red);
+    color: var(--white);
+}
+
+.playoffs {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.final {
+    background: var(--gradient);
+    color: var(--white);
+}
+
+.legenda {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.legenda div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.legenda-box {
+    width: 1rem;
+    height: .5rem;
 }
 
 /* Newsletter / Loja */
@@ -667,7 +761,8 @@ footer p {
     gap: 4px 12px;
 }
 
-.roadcrews__fotos, .time {
+.roadcrews__fotos,
+.time {
     display: flex;
 }
 
