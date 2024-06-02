@@ -247,7 +247,6 @@ header {
 .rodape__itens,
 .pessoal,
 .piloto__info,
-.pilotos,
 .time__nomes {
     width: 100%;
     display: flex;
@@ -419,6 +418,7 @@ header {
 /* Corrida */
 .corrida__informacoes {
     max-width: 800px;
+    margin-left: 2rem;
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas:
@@ -688,6 +688,11 @@ footer p {
     gap: 1rem;
 }
 
+.localizacao__mapa iframe {
+    width: 800px;
+    height: 394px;
+}
+
 /* Página pilotos */
 .piloto__info--conteudo {
     width: 394px;
@@ -736,6 +741,10 @@ footer p {
     cursor: pointer;
     position: relative;
 
+}
+
+.pilotos__grupo, .pilotos {
+    display: flex;
 }
 
 .overlay {
@@ -800,4 +809,180 @@ footer p {
     justify-content: center;
     align-items: end;
     padding-bottom: 1rem;
+}
+
+@media (max-width:1200px) {
+    
+    header {
+        padding: 1.5rem 3rem;
+    }
+
+    .nav__lista{
+        gap: .5rem;
+    }
+
+    .banner {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .banner__texto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .banner__img {
+        display: none;
+    }
+
+    .parceria {
+        width: 90%;
+    }
+
+    .cards__pilotos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        grid-template-areas:
+            "piloto1 piloto2"
+            "piloto3 piloto4";
+
+    }
+
+    .galeria {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        grid-template-areas:
+            "foto1 foto2"
+            "foto1 foto3"
+            "foto4 foto4"
+            "foto5 foto6";
+
+        margin: 0 auto;
+    }
+
+    .container--row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .corrida__img {
+        width: 300px;
+    }
+
+    .corrida__informacoes {
+        margin-left: 0;
+    }
+
+    .corrida__informacao-2 {
+        padding: 2rem;
+    }
+
+    .newsletter {
+        width: 100%;
+    }
+
+    .banner__loja {
+        border: none;
+        padding-left: 0;
+        margin-top: 4rem;
+        width: 80%;
+    }
+
+    .rodape__itens {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .banner__sede {
+        width: 100%;
+    }
+
+    .localizacao {
+        flex-direction: column;
+    }
+
+    .localizacao__mapa iframe {
+        width: 700px;
+        height: 394px;
+    }
+
+    .pilotos {
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    .display-none {
+        display: flex;
+    }
+
+    .overlay {
+        opacity: 0;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    .cards__pilotos, .galeria, .corrida__informacao-2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .galeria__foto--1, .galeria__foto--4, .nav__lista {
+        display: none;
+    }
+    
+    .newsletter {
+        width: fit-content;
+        padding: 0 1.5rem;
+    }
+
+    .banner__loja img {
+        width: 100%;
+    }
+
+    .item--data-hora {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+    }
+
+    .informacao-2__item {
+        text-align: center;
+    }
+
+    .localizacao__mapa iframe {
+        width: 400px;
+        height: 294px;
+    }
+
+    .joe--gibbs {
+        width: 300px;
+    }
+
+    .historia, .historia img {
+        max-width: 300px;
+        margin: 0;
+    }
+
+    .citacao-jg {
+        padding: 2rem;
+    }
+
+    .piloto__info {
+        flex-direction: column-reverse;
+    }
 }
